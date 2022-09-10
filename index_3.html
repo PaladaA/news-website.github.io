@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sport</title>
+<link rel="stylesheet" href="stil_3.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<style>
+.jc{
+position:relative;
+}
+</style>
+
+<script language="JavaScript1.2">
+
+//Trembling message script- (c) Dynamic Drive (www.dynamicdrive.com)
+//For full source code, 100's more DHTML scripts, and TOS,
+//visit http://www.dynamicdrive.com
+
+var ns6=document.getElementById&&!document.all
+var ie=document.all
+
+var customcollect=new Array()
+var i=0
+
+function jiggleit(num){
+if ((!document.all&&!document.getElementById)) return;
+customcollect[num].style.left=(parseInt(customcollect[num].style.left)==-1)? customcollect[num].style.left=1 : customcollect[num].style.left=-1
+}
+
+function init(){
+if (ie){
+while (eval("document.all.jiggle"+i)!=null){
+customcollect[i]= eval("document.all.jiggle"+i)
+i++
+} 
+}
+else if (ns6){
+while (document.getElementById("jiggle"+i)!=null){
+customcollect[i]= document.getElementById("jiggle"+i)
+i++
+}
+}
+
+if (customcollect.length==1)
+setInterval("jiggleit(0)",80)
+else if (customcollect.length>1)
+for (y=0;y<customcollect.length;y++){
+var tempvariable='setInterval("jiggleit('+y+')",'+'100)'
+eval(tempvariable)
+}
+}
+
+    window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+</script>
+</head>
+ 
+<body>
+     <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+       <h1>BRANDNEWS
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "aktualno.", "moda.", "sport.", "vrijeme.", "zabava!" ]'></span>
+</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index_2.html">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="index_8.html">Celerity</a></li>
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            <div id="content">
+            <img src="images/no2.jpg" width="1200" height="750">
+            <div class="prvi">
+               <h2>Arsenal complete £56m Pierre-Emerick Aubameyang signing from Borussia Dortmund in club-record deal</h2>
+                
+            </div><!----------------kraj prvi----------------> 
+            
+            <div class="drugi">
+                <ul>
+                    <li>Borussia Dortmund announced Pierre-Emerick Aubameyang had completed his move to Arsenal</li>
+                    <li>The news was then confirmed by Arsenal, with Aubameyang posing for a series of pictures in the home kit</li> 
+                    <li>His fee is a new club record and Aubameyang has become their highest-paid player on £180,000 per week</li>
+                    <li>His move allowed Olivier Giroud to join Chelsea, and Michy Batshuayi to head on loan to Dortmund</li>
+                    <li>Transfer Deadline Day LIVE: See all the latest news on signings and deals</li>
+                </ul>
+                
+                <hr>
+                
+                <p>
+                Arsenal have completed the club-record £56million signing of Pierre-Emerick Aubameyang from Borussia Dortmund. <br>
+                <br>
+                Dortmund confirmed the news on their Twitter account on Wednesday, before Arsenal then shared a series of pictures of Aubameyang posing in the club's home kit, pulling a variety of animated poses. He has become the best-paid player in the club's history on a three-and-a-half-year contract worth £180,000 per week.<br>
+                <br>
+                The 28-year-old striker is part of a transfer merry-go-round that also saw Olivier Giroud leave the Gunners for Chelsea and Michy Batshuayi quit Stamford Bridge to replace Aubameyang at Dortmund.</p>
+                
+                
+                <iframe class="vid" width="860" height="515" src="https://www.youtube.com/embed/h76v9yi07d4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+                <p>But Aumbameyang brings with him a bad-boy reputation, having been the subject of several disciplinary proceedings by Dortmund as he pushed for a move away from the club. <br>
+                <br>
+                A statement from Dortmund sporting director Michael Zorc alluded to the recent problems, saying: 'Apart from the unpleasant events of recent weeks, we like to remember that the story of Pierre-Emerick Aubameyang at BVB for more than four years was a single success story.<br>
+                <br>
+                'He has done great things for Borussia Dortmund at this time, scored many important goals and is part of the team that brought the DFB Cup to Dortmund in 2017. We wish Pierre-Emerick all the best for his future at Arsenal.'</p>
+                
+            </div><!----------------kraj drugi--------------->
+            
+            <div class="treci">
+                <img src="images/no1.jpg" alt="tip" width="375" height="270" class="pic1">
+                <p class="tekst1">Aubameyang clutches the club badge on his chest in a display that will endear him to Arsenal fans already</p>
+                <img src="images/no3.jpg" alt="tip" width="375" height="270" class="pic2">
+                <p class="tekst2">He was seen with members of his family, who are joining him for the trip to London to finalise his stunning move to the Emirates Stadium</p>
+                <img src="images/no4.jpg" alt="tip" width="375" height="270" class="pic3">
+                <p class="tekst3">Pierre-Emerick Aubameyang poses in Arsenal's home kit after completing his transfer from Borussia Dortmund</p>
+                
+            </div><!----------------kraj treci-------------->
+            </div><!----------------kraj content----------------> 
+            
+             <footer>
+        <p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+            
+    </div><!----------------kraj wrap-----------------> 
+    </body>
+</html>

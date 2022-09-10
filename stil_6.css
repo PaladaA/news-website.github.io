@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 4px 4px 5px #888;
+    box-shadow: 4px 4px 5px #888;
+    background-color: #0a2945;
+   
+}
+#header h1{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #eaedf0;
+    text-shadow: 1px 2px 3px #fff;
+    padding: 150px 0 50px 680px;
+    
+}
+#nav{
+    height: 60px;
+    margin-left: 509px;
+}
+
+#nav ul{
+    list-style-type: none;
+     margin: 0 auto;
+}
+#nav ul li{
+    float: left;
+    display: inline-block;
+}
+#nav ul li a{
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgb(170, 29, 29);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+#nav ul li a:hover{
+    color: #edcd64;
+    background-color: rgba(128, 97, 29, 0.24);
+}
+#content{
+    height: 2390px;
+    width: 1200px;
+    background-color: #fff;
+    position: relative;
+    left: 250px;
+    border: 2px solid #0a2945;
+}
+.prvi{
+    position: relative;
+    top: -5px;
+    background-color: #1b1c20;
+    height: 230px;
+}
+.prvi h2{
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 20px;
+    line-height: 55px;
+    font-family: 'Playfair Display', serif;
+}
+
+.drugi{
+    position: relative;
+    background-color: #fff;
+    height: 450px;
+}
+.drugi p{
+    padding: 30px 50px 0 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.treci{
+    position: relative;
+    left: 100px;
+    background-color: #a5a1a1;
+    height: 950px;
+    border: 2px solid #0a2945;
+    width: 1000px;
+}
+.treci h3{
+    font-size: 35px;
+    color: #0a2945;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 30px;
+    line-height: 55px;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px;
+}
+.treci h3::after{
+    height: 2px;
+    background-color: #0a2945;
+    width: 430px;
+    margin: 0 auto;
+    content: '';
+    display: block;
+    margin-top: 20px;
+}
+.vid{
+    margin: 50px 0px 0px 70px;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height: 0;
+	overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+.treci p{
+     padding: 30px 50px 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#footer{
+    width: 1204px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0a2945;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 250px;
+}

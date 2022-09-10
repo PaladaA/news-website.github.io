@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Celebrity</title>
+<link rel="stylesheet" href="stil_8.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<script language="JavaScript">
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow(){
+	pauseButton.innerHTML = 'Play';
+	playing = false;
+	clearInterval(slideInterval);
+}
+
+function playSlideshow(){
+	pauseButton.innerHTML = 'Pause';
+	playing = true;
+	slideInterval = setInterval(nextSlide,2000);
+}
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
+};
+    </script>
+    
+    <script language="JavaScript">function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}</script>
+</head>
+ 
+<body>
+     <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+       <h1>BRANDNEWS</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="index_2.html">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="#">Celerity</a></li> 
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            
+             <div id="content">
+             
+             <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/sed.jpg" style="width:100%">
+  <img class="mySlides" src="images/tri.jpeg" style="width:100%">
+  <img class="mySlides" src="images/cetri.jpg" style="width:100%">
+  <img class="mySlides" src="images/sest.jpg" style="width:100%">
+
+  <button class="botun1 w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="botun2 w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+           
+           <div class="prvi">
+               <p>Celebrity<br> babies of 2018</p>
+               <img src="images/kardas.jpg" width="620" height="430" alt="kardashian" class="slika1">
+               <a href="index_9.html" class="botun">Read more</a>
+               
+              
+           </div><!----------------kraj prvi-----------------> 
+           
+           <div class="drugi">
+             <img src="images/nez.jpg" width="620" height="375" alt="neke zenske" class="slika2"> 
+             <p class="tekst1"><strong>Cat Cora Marries Nicole Ehrlich: ‘We Couldn’t Have Asked for a More Perfect Day’</strong><br>
+             
+             The pair tied the knot in a romantic ceremony on Saturday, April 21, in Santa Barbara, California, at the Villa Verano Estate. Both brides wore dresses from Kleinfeld Bridal, the boutique featured in TLC’s Say Yes to the Dress, in NYC. Cora stunned in a Pnina Tornai, while Ehrlich glowed in a Signore. The wedding featured a sushi bar, cupcakes and a wedding cake.</p> 
+             
+             <img src="images/nez2.jpg" width="620" height="375" alt="neke zenske" class="slika3"> 
+             <p class="tekst2"><strong>Jenna Dewan Makes First Red Carpet Appearance Since Channing Tatum Split</strong><br>
+             Jenna Dewan stepped out for her first public appearance since announcing her split from husband Channing Tatum. The actress attended the St. Jude Hope & Heritage Gala on Friday, April 20, where she was being honored as the St. Jude Children’s Research Hospital Humanitarian of the Year.</p>
+             
+             <img src="images/nez3.jpg" width="620" height="375" alt="neke zenske" class="slika4"> 
+             <p class="tekst3"><strong>Beyonce and Solange Adorably Fall on Stage at Coachella</strong><br>
+             The “Formation” singer, 36, performed for the second time at the festival in Indio, California, on Saturday and in a repeat of last week’s show, her little sister was one of her special guests. The pair danced along to the song “Get Me Bodied” and at the end of their dance number, Queen Bey attempted to pick up the “Cranes in the Sky” singer, 31.</p>
+           </div><!----------------kraj drugi-----------------> 
+           
+           <div class="treci">
+                
+                 <div class="container_1">
+        <img src="images/cardi-b8.jpg" width="350" height="400" alt="prirodni emoji">
+            
+            <div class="textbox">
+            
+                <h3 class="naslov_1">Baby on Board<br></h3>
+             <p>Pregnant Cardi B. wore a Princess Diana T-shirt as she performed at the Broccoli City Festival in Washington D.C. on Saturday, April 28. </p>
+            
+                     </div> </div>
+                     
+                     <div class="container_2">
+        <img src="images/i.jpg" width="350" height="400" alt="prirodni emoji">
+            
+            <div class="textbox">
+            
+            <h3 class="naslov_2"> DJ Avicii</h3>
+            <p>Despite his model girlfriend, a string of hits and a £60million fortune, giving gruelling performances night after night was killing him.</p>
+            
+                     </div> </div>
+        
+          <div class="container_3">
+        <img src="images/cassidy.jpg" width="350" height="400" alt="prirodni emoji">
+            
+            <div class="textbox">
+            
+                <h3 class="naslov_3"> Star Katie Cassidy</h3>
+                <p>Opens Up About Her Late Father David Cassidy: ‘He Had Some Demons’</p>
+            
+                     </div> </div>
+           
+
+           </div><!----------------kraj treci-----------------> 
+           
+           <div class="cetvrti">
+         
+        <img src="images/selena.jpg" alt="svjetla" class="foto1">
+     
+    <div class="slova">
+        <h3> Selena Gomez</h3>
+    </div>
+    
+    
+    <textarea class="jedan">
+HOLIER THAN THOU This is the secret message hidden in Selena Gomez’ Met Gala look
+The singer was styled by Coach for the event but added her own personal touch.
+But Selena Gomez 2018 Met Gala look carried a much more subtle message that any but the most eagle-eyed would have missed.
+
+The 25-year-old singer, who was styled by Coach, wore a ruffled gown with silk gauze and hand-pleated frills, and carried a small cream handbag.
+
+And the message was in the detail of the bag which, according to Coach, was "finished with a personal touch from Ms. Gomez."
+
+A close up of the bag on the brand’s Instagram page revealed an embroidered message which read: “A woman who fears the lord is a woman who shall be praised.”
+The quote is a Bible verse taken from Proverbs, and was chosen by the star herself.
+
+There was another Bible quote on the ribbon of her dress, but it was unreadable on the Instagram pic.
+
+It’s not the first time the star has used the Met red carpet to give out a positive message.
+
+Last year her bag read: “Love yourself first."
+</textarea>
+          
+          <img src="images/rihanna.jpg" alt="svjetla" class="foto2">
+     
+    <div class="slova2">
+        <h3>Rihanna</h3>
+    </div>
+    
+    
+    <textarea class="dva">
+RUDE GIRL Rihanna is about to launch her own lingerie line and fans are VERY excited
+The singer is widening her already established fashion and beauty empire to include the Savage x Fenty underwear collection set to be released this year.
+RIHANNA has already conquered the worlds of music, fashion and beauty – but now she is about to launch her first all-inclusive lingerie line.
+
+The 30-year-old teased the Savage x Fenty underwear collection, which is yet to see a release date, in a series of sensual short videos picturing models in pink lacy lingerie on Instagram.
+
+Rihanna’s own sex appeal is obvious in the confidence and swagger she carries with her personal style, which includes a fair share of see-through pieces, and this is set to carry through to her lingerie.
+
+The teaser campaign features a blurred, shuttered video of the self-proclaimed ‘bad girl’ in a baby pink bra, suggesting at a colour scheme that is just as wearable as her choice in inclusive sizing.
+
+On the Savage lingerie website, sizes are available from 32A to a 44DD cup, and the underwear ranges from XS to a size 3X, so most women should be able to find something that fits.
+
+Despite being left in the unknown about the lingerie’s release, fans can sign up through the official Savage website for updates on the collection.
+Already the Savage x Fenty Instagram account has over 120,000 eager followers, following the cryptic teaser on Riri’s main Instagram page captioned ‘didn’t they tell you’.
+
+The caption is an allusion to the lyrics of her 2016 song ‘Needed Me’, where she refers to herself as a ‘savage’ – hence the name of her latest brand.
+
+The news comes only weeks after the star decided to add skincare to the Fenty Beauty cosmetics line, and the shimmering Body Lava quickly sold out.
+
+And fans are just as excited about the lingerie collection, with many taking to social media to share their opinions on the teaser campaign.
+</textarea>
+           </div><!----------------kraj cetvrti-----------------> 
+            </div><!----------------kraj content-----------------> 
+            
+<footer>
+<p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+    </div><!----------------kraj wrap-----------------> 
+    </body>
+</html>

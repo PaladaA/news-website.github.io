@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sport</title>
+<link rel="stylesheet" href="stil_5.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<script>
+    window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    </script>
+</head>
+ 
+<body>
+     <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+       <h1>BRANDNEWS
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "aktualno.", "moda.", "sport.", "vrijeme.", "zabava!" ]'></span>
+</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index_2.html">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="index_8.html">Celerity</a></li>
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            <div id="content">
+            <img src="images/one.jpg" width="1200" height="650" alt="box">
+            <div class="prvi">
+               <h2>Bolton boxer has signed a multi-fight deal with Eddie Hearn's Matchroom, after a spell in the Australian jungle</h2>
+                </div><!----------------kraj prvi----------------->
+                
+                  <div class="drugi">
+                  <p>Former unified light-welterweight ruler Khan is determined to get back on the road to world title glory in his first fight of a three-fight deal with Matchroom Boxing.<br>
+                   <br>
+                   He has not fought in the UK since beating Julio Diaz in Sheffield back in 2013.<br>
+                   <br>
+                   And after a spell appearing on I'm A Celebrity... Get Me Out Of Here! last year, where he endured horror trials in the Australian jungle,the boxer is ready to lace up the gloves once again.<br>
+                   <br>
+                   Lo Greco has mixed in great company having been in with Errol Spence and Shawn Porter, and ‘The Italian Sensation’ will come face-to-face with Khan at a press conference in Liverpool tomorrow.</p>
+                   
+                   
+                   <img src="images/two.jpg" width="550" height="400" alt="box" class="pic1">
+                   <img src="images/three.jpg" width="550" height="400" alt="box" class="pic2">
+                   
+                   
+                   <p class="nastavak">“I wanted people to see the real me. Then I wanted to get back boxing — make sure I come back with a bang.<br>
+                       <br>
+                      “The only way to do that is with someone established. I know for a fact he can get me the big fights.<br>
+                       <br>
+                      SHINING THROUGH Amir Khan proved he is a ‘genuinely nice youngster’ in his stint on I’m A Celebrity…Get Me Out Of Here, says proud father ahead of boxer’s ring return<br>
+                      “I had a lot of options but wanted my career to be in England — that’s why I picked Eddie.<br>
+                        <br>
+                      “He’s the biggest name in UK boxing and has a huge platform which is Sky.<br>
+                       <br>
+                      “Eddie does a great job with his fighters, gets them to world title fights, gets them the biggest fights.<br>
+                        <br>
+                      “I want to start fighting in the UK — it’s been five years.”</p>
+                      
+                      
+                  </div><!----------------kraj drugi---------------->
+                  
+                   <div class="treci">
+                   <div class="container">
+        <img src="images/four.jpg" width="375" height="300" alt="boksac">
+            
+            <div class="textbox">
+            
+            <h3 class="naslov">Amir Khan and Eddie Hearn</h3>
+            
+                       </div>
+        
+        </div>
+        
+                   
+                     <div class="container2">
+        <img src="images/five.jpg" width="375" height="300" alt="boksac">
+            
+            <div class="textbox2">
+            
+            <h3 class="naslov2">Biggest stars in British boxing</h3>
+            
+                       </div>
+        
+        </div>
+        
+          <div class="container3">
+        <img src="images/six.jpg" width="375" height="300" alt="boksac">
+            
+            <div class="textbox3">
+            
+            <h3 class="naslov3"> Signing a deal with Matchroom</h3>
+            
+                       </div>
+        
+        </div>
+        
+        
+        <iframe class="vid" width="760" height="515" src="https://www.youtube.com/embed/sPzOFPFLGYs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+                </div><!----------------kraj treci--------------->
+                  
+            </div><!-----------------kraj content---------------->
+            
+            <footer>
+        <p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+            
+    </div><!-----------------kraj wrap----------------->
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sport</title>
+<link rel="stylesheet" href="stil_2.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<script>
+    window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    </script>
+
+</head>
+ 
+<body>
+     <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+       <h1>BRANDNEWS
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "aktualno.", "moda.", "sport.", "vrijeme.", "zabava!" ]'></span>
+</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="index_8.html">Celerity</a></li>
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            
+             <div id="content">
+                 <div class="news_1">
+                     
+                <h2>NOU FEEL Inside Barcelona’s £550million, revamped Nou Camp with boosted 105,000 capacity, new indoor arena and a roof that catches rain in order to water the pitch</h2>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/-i6gsb_bRW8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 <p>Europe's biggest stadium, which has sat in a basin just outside the city centre for over 60 years, is overdue an upgrade - and is about to get exactly that.</p>
+                  </div><!----------------kraj news1-----------------> 
+                 
+                 <div class="news_2">
+                    <div class="prvi">
+                     <img src="images/prvi.jpg" width="200" height="150" alt="atletika" class="foto1">
+                     <p>BLAZIN QUAD Aussie star Trae Williams dubbed ‘Quadzilla’ after running 100m in 10.10sec with HUGE tight muscles. He have shocked sports fans the world over and been compared to the quads of cyclists Chris Hoy.</p></div>
+                     <div class="drugi">
+                     <img src="images/drugi.jpg" width="200" height="150" alt="klizanje" class="foto2">
+                     <p>TRIPLE TRIP Winter Olympics 2018: Figure skater Mirai Nagasu falls trying to land her signature triple axle – the move that’s so hard no one else even tries it. American star fluffed her landing while attempting her 3½-revolution jump.</p></div>
+                     <div class="treci">
+                     <img src="images/treci.jpg" width="200" height="150" alt="klizanje" class="foto3">
+                     <p>TRIPLE TRIP Winter Olympics 2018: Figure skater Mirai Nagasu falls trying to land her signature triple axle – the move that’s so hard no one else even tries it. American star fluffed her landing while attempting her 3½-revolution jump.</p></div>
+                 </div><!----------------kraj news2----------------> 
+                 
+                 
+                 <!----------------pocetak news3-----------------> 
+                 <div class="news_3">
+                 <img src="images/jos.png" alt="ronda" width="300" height="450" class="slika">
+                 <h4>Ronda<br> Rousey </h4>
+                     <a href="https://www.facebook.com/ronda.cips/" class="link">Facebook</a>
+                     
+                     <p>American Ronda Rousey helped bring female mixed martial arts to a mainstream audience en route to becoming the first UFC women's champion.Rousey confirmed she was joining World Wrestling Entertainment with her surprise appearance at the WWE women's Royal Rumble match. "This is my life now," she told an ESPN reporter afterward. </p>
+                 </div> <!----------------kraj news3-----------------> 
+                 
+                 
+                   <!----------------pocetak news4-----------------> 
+                 <div class="news_4">
+                    <a href="index_6.html" class="naslov">CONOR McGREGOR believes Floyd Mayweather will<br> earn respect if he enters the world of MMA - and claims<br> the unbeaten boxing icon will regret it for the rest of his<br> life if he doesn't try it.</a>
+                    
+                     <img src="images/pic1.jpg" alt="mcgregor" width="710" height="470" class="pic1">
+                     
+                     <img src="images/pic2.jpg" alt="mcgregor" width="230" height="150" class="pic2">
+                     <img src="images/pic3.jpg" alt="mcgregor" width="230" height="150" class="pic3">
+                     <img src="images/pic4.jpg" alt="mcgregor" width="230" height="150" class="pic4">
+                     
+                     <img src="images/pic5.jpg" alt="mcgregor" width="230" height="150" class="pic5">
+                     <img src="images/pic6.jpg" alt="mcgregor" width="230" height="150" class="pic6">
+                     <img src="images/pic7.jpg" alt="mcgregor" width="230" height="150" class="pic7">
+                     </div>
+            </div><!----------------kraj content----------------> 
+            
+                  <footer>
+        <p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+    
+    </div><!----------------kraj wrap-----------------> 
+    
+    </body>
+</html>

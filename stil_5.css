@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 4px 4px 5px #888;
+    box-shadow: 4px 4px 5px #888;
+    background-color: #0a2945;
+   
+}
+#header h1{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #eaedf0;
+    text-shadow: 1px 2px 3px #fff;
+    padding: 150px 0 50px 680px;
+    
+}
+#nav{
+    height: 60px;
+    margin-left: 509px;
+}
+
+#nav ul{
+    list-style-type: none;
+     margin: 0 auto;
+}
+#nav ul li{
+    float: left;
+    display: inline-block;
+}
+#nav ul li a{
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgb(170, 29, 29);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+#nav ul li a:hover{
+    color: #edcd64;
+    background-color: rgba(128, 97, 29, 0.24);
+}
+#content{
+    height: 3135px;
+    width: 1200px;
+    background-color: #fff;
+    position: relative;
+    left: 250px;
+    border: 2px solid #0a2945;
+}
+
+.prvi{
+    position: relative;
+    top: -5px;
+    background-color: #1b1c20;
+    height: 230px;
+}
+.prvi h2{
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 20px;
+    line-height: 55px;
+    font-family: 'Playfair Display', serif;
+}
+.drugi{
+    position: relative;
+    background-color: #fff;
+    height: 1250px;
+}
+.drugi p{
+    padding: 30px 50px 0 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.drugi .pic1{
+    position: absolute;
+    top: 380px;
+    left: 45px;
+}
+.drugi .pic2{
+     position: absolute;
+    top: 380px;
+    left: 605px;
+}
+p.nastavak{
+    position: absolute;
+    top: 800px;
+}
+.treci{
+    position: relative;
+    background-color: #888;
+    height: 1000px;
+}
+.container{
+    width: 375px;
+    height: 350px;
+    display: block;
+    position: relative;
+    top:20px;
+    left: 20px;
+    float: left;
+    
+}
+.container .textbox{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 375px;
+    height: 50px;
+    margin-top: 250px;
+    transition: all 0.4s;
+}
+.naslov{
+    text-align: center;
+    color: #eaedf0;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.container2{
+    width: 375px;
+    height: 350px;
+    display: block;
+    position: relative;
+    top:20px;
+    left: 35px;
+    float: left;
+    
+}
+.container2 .textbox2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 375px;
+    height: 50px;
+    margin-top: 250px;
+    transition: all 0.4s;
+}
+.naslov2{
+    text-align: center;
+    color:#eaedf0;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.container3{
+    width: 375px;
+    height: 350px;
+    display: block;
+    position: relative;
+    top:20px;
+    left: 55px;
+    float: left;
+    
+}
+.container3 .textbox3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 375px;
+    height: 50px;
+    margin-top: 250px;
+    transition: all 0.4s;
+}
+.naslov3{
+    text-align: center;
+    color: #eaedf0;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.vid{
+    margin: 50px 0px 0px 230px;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height: 0;
+	overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+#footer{
+    width: 1204px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0a2945;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 250px;
+}

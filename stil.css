@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 4px 4px 5px #888;
+    box-shadow: 4px 4px 5px #888;
+    background-color: #0a2945;
+   
+}
+#header h1{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #eaedf0;
+    text-shadow: 1px 2px 3px #fff;
+    padding: 150px 0 50px 0px;
+    text-align: center;
+    
+}
+#header h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+#header h1 { font-size: 3.5em; }
+#nav{
+    height: 60px;
+    margin-left: 25%;
+}
+
+#nav ul{
+    list-style-type: none;
+     margin: 0 auto;
+}
+#nav ul li{
+    float: left;
+    display: inline-block;
+}
+#nav ul li a{
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgb(170, 29, 29);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+#nav ul li a:hover{
+    color: #edcd64;
+    background-color: rgba(128, 97, 29, 0.24);
+}
+#content{
+    height: 3250px;
+    width: 1200px;
+    background-color: #fff;
+    margin-left: 12%;
+    border: 2px solid #0a2945;
+}
+.last_1 h2{
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0 20px 50px;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+}
+.slideshow{
+    padding-left: 100px;
+    
+}
+.stupci{
+    width: 1200px;
+    margin: 100px auto;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+}
+.stupci #naslov1{
+    font-size: 30px;
+    color: red;
+    background-color: #0a2945;
+    text-decoration: none;
+    padding: 10px 0 20px 180px;
+    font-family: 'Playfair Display', serif;
+}
+.stupci #naslov2{
+    font-size: 30px;
+    color: red;
+    background-color: #0a2945;
+    text-decoration: none;
+    padding: 10px 0 20px 180px;
+    font-family: 'Playfair Display', serif;
+}
+.prvi{
+    background-color: #fff;
+    flex-basis: 35%;
+    box-sizing: border-box;
+    
+}
+
+.drugi{
+    flex-basis: 35%;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+}
+.stupci p{
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif;
+    text-align:left;
+    padding: 10px;
+}
+.stupci p strong{
+    font-size: 23px;
+}
+.slika1{
+    padding: 30px 10px 5px 5px;
+    float: left;
+}
+p.tekst{
+   padding-top: 35px;
+    text-align:inherit;
+}
+.slika2{
+    padding: 40px 10px 5px 5px;
+    float: left;
+}
+p.tekst2{
+   padding-top: 55px;
+    text-align:inherit;
+}
+.last_2 h2{
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0 20px 50px;
+    line-height: 50px;
+    height: 50px;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+}
+.jedan{
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;
+}
+.container .textbox{
+    position: absolute;
+    top: 231px;
+    background-color: rgba(46, 45, 45, 0.76);
+    width: 350px;
+    height: 70px;
+}
+a.naslov{
+    text-align: center;
+    color: #f5faf5;
+    padding-top: 10px;
+    font-size: 15px;
+    position: absolute;
+    text-decoration: none;
+}
+.dva{
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;
+}
+.tri{
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;
+}
+
+
+.sport .img{
+    padding: 10px 20px 0px 30px;
+}
+.sport p{
+    width: 514px;
+    height: 130px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: -3px;
+    border: 3px solid rgba(46, 45, 45, 0.76);
+    padding: 20px 15px;
+}
+.sport a{
+    font-size: 23px;
+    color: #363434;
+    text-decoration: none;
+}
+.sport p strong {
+    font-size: 23px;
+    color: #656464;
+}
+
+.vrijeme{
+    width: 545px;
+    background-color: #fff;
+    height: 575px;
+    position: relative;
+    top: -577px;
+    left: 600px;
+}
+.vrijeme #naslov3{
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    font-size: 40px;
+    color: #e52828;
+    text-decoration: underline;
+    padding: 0px 50px;
+    line-height: 50px;
+    height: 50px;
+    font-family: 'Playfair Display', serif;
+}
+.vrijeme .pic1{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.vrijeme p.text1{
+    padding-top: 110px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+.vrijeme .pic2{
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+.vrijeme p.text2{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+.vrijeme .pic3{
+    position: absolute;
+    top: 260px;
+    left: 50px;
+}
+.vrijeme p.text3{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+.vrijeme .pic4{
+    position: absolute;
+    top: 340px;
+    left: 50px;
+}
+.vrijeme p.text4{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+.vrijeme .pic5{
+    position: absolute;
+    top: 420px;
+    left: 50px;
+}
+.vrijeme p.text5{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+.vrijeme .pic6{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+.vrijeme p.text6{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+#footer{
+    width: 1204px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0a2945;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 12%;
+}
+
+
+
+button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:10px;
+  font-size:20px;
+  background: #0a2945;
+  color:white;
+  font-family:sans-serif;
+  box-sizing:border-box;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#text, #text2{
+    display: none;
+}

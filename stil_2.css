@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 4px 4px 5px #888;
+    box-shadow: 4px 4px 5px #888;
+    background-color: #0a2945;
+   
+}
+#header h1{
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #eaedf0;
+    text-shadow: 1px 2px 3px #fff;
+    padding: 150px 0 50px 680px;
+    
+}
+#nav{
+    height: 60px;
+    margin-left: 509px;
+}
+
+#nav ul{
+    list-style-type: none;
+     margin: 0 auto;
+}
+#nav ul li{
+    float: left;
+    display: inline-block;
+}
+#nav ul li a{
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgb(170, 29, 29);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+#nav ul li a:hover{
+    color: #edcd64;
+    background-color: rgba(128, 97, 29, 0.24);
+}
+#content{
+    height: 2100px;
+    width: 1200px;
+    background-color: #fff;
+    position: relative;
+    left: 250px;
+    border: 2px solid #0a2945;
+}
+.news_1{
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: #dbd3d3;
+    width: 565px;
+    padding: 15px;
+}
+.news_1 h2{
+    padding-bottom: 20px;
+    
+}
+.news_1 p{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height: 0;
+	overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+.news_2{
+    position: relative;
+    top: -559px;
+    left: 625px;
+    background-color: #fff;
+    width: 545px;
+    height: 559px;
+}
+.news_2 .foto1{
+    padding: 15px 15px;
+}
+.news_2 .foto2{
+    padding: 15px 15px;
+    display: block;
+}
+.treci .foto3{
+    padding: 15px 15px;
+    display: block;
+}
+.prvi p{
+    position: absolute;
+    top: 15px;
+    left: 230px;
+    width: 300px;
+    font-size: 18px;
+}
+.drugi p{
+    position: absolute;
+    top: 200px;
+    left: 230px;
+    width: 300px;
+    font-size: 18px;
+}
+.treci p{
+    position: absolute;
+    top: 400px;
+    left: 230px;
+    width: 300px;
+    font-size: 18px;
+}
+.news_3{
+    position: relative;
+    top: -500px;
+    left: 0px;
+    background-color: #1b1c20;
+    width: 1200px;
+    height: 500px;
+}
+.slika{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.news_3 h4{
+    font-size: 65px;
+    color: #fff;
+    text-decoration: none;
+    padding: 80px 0 20px 80px;
+    line-height: 70px;
+    height: 50px;
+    font-family: 'Playfair Display', serif;
+}
+.link{
+    position: absolute;
+    top: 260px;
+    left: 120px;
+    font-size: 27px;
+    color: #908888;
+}
+.news_3 p{
+    position: absolute;
+    top: 70px;
+    left: 550px;
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    padding: 80px 0 20px 80px;
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.news_4{
+    position: relative;
+    top: -470px;
+    left: 0px;
+    background-color: #fff;
+    width: 1200px;
+    height: 900px;
+}
+.news_4 .naslov{
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    font-size: 26px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    background-color: #dbd3d3;
+    padding: 10px 25px 10px 20px;
+    text-align: left;
+    color: black;
+}
+.news_4 .pic1{
+     position: absolute;
+    top: 179px;
+    left: 120px;
+}
+.news_4 .pic2{
+    position: absolute;
+    top: 179px;
+    left: 840px;
+}
+.news_4 .pic3{
+    position: absolute;
+    top: 339px;
+    left: 840px;
+}
+.news_4 .pic4{
+    position: absolute;
+    top: 499px;
+    left: 840px;
+}
+.news_4 .pic5{
+    position: absolute;
+    top: 660px;
+    left: 120px;
+}
+.news_4 .pic6{
+    position: absolute;
+    top: 660px;
+    left: 360px;
+}
+.news_4 .pic7{
+    position: absolute;
+    top: 660px;
+    left: 600px;
+}
+#footer{
+    width: 1204px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0a2945;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 250px;
+}
+

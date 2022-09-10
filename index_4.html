@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sport</title>
+<link rel="stylesheet" href="stil_4.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<script>
+    window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    </script>
+
+</head>
+
+ 
+<body>
+     <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+      <h1>BRANDNEWS
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "aktualno.", "moda.", "sport.", "vrijeme.", "zabava!" ]'></span>
+</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="index_2.html">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="index_8.html">Celerity</a></li>
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            <div id="content">
+            <img src="images/sl2.jpg" width="1200" height="600" alt="tenis">
+            <div class="prvi">
+               <h2>The pair are battling it out in Melbourne to win as they both hope to lift their first Grand Slam title</h2>
+                </div><!----------------kraj prvi-----------------> 
+                
+                <div class="drugi">
+                
+                <p class="text">It is finals weekend at the Australian Open and during Saturday's Ladies final, Simona Halep and Caroline Wozniacki took a break before the final set.
+
+               World No 2 Wozniacki won the first set 7-6, but Halep came back in the second to level the sets.
+               THE heat rule indicates that when humidity gets to 50%, the umpire can pause the game for a set time. 
+
+               Players  get 10 minutes off court in the locker room to cool down.
+
+               The rule was enforced following the conclusion off the second set and both players took 10 minutes before the start of the third.
+               The rule has been enforced twice in this year's Australian Open. 
+
+               Both occasions happened on the same day with the first time was during the men's wheelchair final.
+               A maiden Grand Slam title that meant so much to both players could, sadly, only belong to one. Caroline Wozniacki is the 2018 Australian Open champion after an enthralling battle between two great baseline warriors ended 7-6 (7-2) 3-6 6-4 with raw emotion from both players, but at brave Simona Halep’s expense.
+
+               In hot and humid conditions on Rod Laver Arena, a match that lasted two hours and 49 minutes was not just a test of tennis, and nerve, but of courage and will. The first major women’s final in the Open era between two women who had saved match points to get there was decided on the first with a netted Halep backhand.</p>
+               
+               
+               <img src="images/sl3.jpg" width="1000" height="600" alt="tenis" class="pic">
+               <p class="tekst">Simona Halep is hoping to remain world number one and win her first Grand Slam </p>
+                </div><!----------------kraj drugi-----------------> 
+                
+                
+                <div class="treci">
+                    <p>“I don’t want to change anything,” she said. “I have to work. I’m ready for it. For sure it’s a big challenge. Maybe the biggest one, because all the things that were going on this tournament, first grand slam of the year, first final here. So I take it like a nice thing and with good thoughts. Nothing else.”</p>
+                </div><!----------------kraj treci---------------> 
+                
+                <div class="cetvrti">
+                    
+                   <iframe class="vid" width="900" height="515" src="https://www.youtube.com/embed/RN1Tnc6-Y9k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                </div><!----------------kraj cetvrti--------------> 
+                
+                <div class="peti">
+                    <img src="images/sl5.webp" alt="tip" width="375" height="270" class="pic1">
+                <p class="tekst1">Denmark’s Caroline Wozniacki poses with the winner’s trophy after beating Romania’s Simona Halep in the Australian Open women’s singles final in Melbourne on January 27, 2018</p>
+                <img src="images/sl6.webp" alt="tip" width="375" height="270" class="pic2">
+                <p class="tekst2"> One drought was guaranteed to end in the Australian Open women’s final, and relief came for Caroline Wozniacki, while depriving Halep of the same satisfaction.</p>
+                <img src="images/sl7.webp" alt="tip" width="375" height="270" class="pic3">
+                <p class="tekst3">Caroline Wozniacki (L) and Simona Halep will take on each other in the final of the Australian Open with more than just the championship at stake.</p>
+                
+                </div><!----------------kraj peti--------------> 
+                
+            </div><!----------------kraj content-----------------> 
+            
+            <footer>
+        <p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+    </div>
+    </body>
+</html>

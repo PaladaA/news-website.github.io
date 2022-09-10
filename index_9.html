@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="stil_9.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<meta name="description" value="Using the build-in cover-, scroll- and uncover-effects, these three jQuery carousels placed on top of each other create a pretty cool effect." />
+<meta name="keywords" value="sequence, carousel, uncover, uncovering, jquery" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="jquery.carouFredSel-6.1.0-packed.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+			$(function() {
+				var $l = $('#carousel-left'),
+					$c = $('#carousel-center'),
+					$r = $('#carousel-right');
+					
+				$l.carouFredSel({
+					auto: false,
+					items: 1,
+					direction: 'right',
+					prev: {
+						button: '#prev',
+						fx: 'uncover',
+						onBefore: function() {
+							setTimeout(function() {
+								$c.trigger( 'prev' );
+							}, 100);
+						}
+					},
+					next: {
+						fx: 'cover'
+					}
+				});
+				$c.carouFredSel({
+					auto: false,
+					items: 1,
+					prev: {
+						onBefore: function() {
+							setTimeout(function() {
+								$r.trigger( 'prev' );
+							}, 100);
+						}
+					},
+					next: {
+						onBefore: function() {
+							setTimeout(function() {
+								$l.trigger( 'next' );
+							}, 100);
+						}
+					}
+				});
+				$r.carouFredSel({
+					auto: false,
+					items: 1,
+					prev: {
+						fx: 'cover'
+					},
+					next: {
+						button: '#next',
+						fx: 'uncover',
+						onBefore: function() {
+							setTimeout(function() {
+								$c.trigger( 'next' );
+							}, 100);
+						}
+					}
+				});
+			});
+		</script>
+
+
+
+    </head>
+    
+<body>
+        <!-----------------wrap----------------->
+        <div id="wrap">
+    
+      
+<!-----------------header----------------->
+       <div id="header">
+       <h1>BRANDNEWS</h1>
+       
+       <div id="nav">
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index_2.html">Sport</a></li>
+                    <li><a href="index.html">Fashion</a></li>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="index.html">Politics</a></li>
+                    <li><a href="index_8.html">Celerity</a></li>
+                </ul>
+            
+            </div><!----------------kraj navigacije-----------------> 
+            </div><!----------------kraj header-----------------> 
+            
+            <div id="content">
+            <img src="images/dica.jpg" width="1200" height="650" alt="box">
+            <div class="prvi">
+               <h2>Celebrity and royal baby news: The latest scoop on stars who have welcomed new bundles</h2>
+                </div><!----------------kraj prvi----------------->
+                
+                
+                <div class="drugi">
+             <img src="images/dw.jpg" width="620" height="375" alt="neke zenske" class="slika2"> 
+             <p class="tekst1"><strong>Dwayne "The Rock" Johnson & Lauren Hashian: Tiana Gia</strong><br>
+             
+             The actor welcomed his third daughter (his second with wife Lauren Hashian), a baby girl named Tiana Gia Johnson. "Blessed and proud to bring another strong girl into this world," he wrote on Instagram. "Tiana Gia Johnson came into this world like a force of nature and Mama [Lauren Hashian] labored and delivered like a true rockstar."</p> 
+             
+             <img src="images/ky.jpg" width="620" height="375" alt="neke zenske" class="slika3"> 
+             <p class="tekst2"><strong>Kylie Jenner & Travis Scott</strong><br>
+             The 20-year-old gave birth to her first child, a baby girl, on Feb. 1. "My beautiful and healthy baby girl arrived February 1st and I just couldn't wait to share this blessing. I've never felt love and happiness like this I could burst," she wrote on Instagram Feb. 4, simultaneously announcing her pregnancy and the birth of her baby girl.</p>
+             
+             <img src="images/sam.jpg" width="620" height="375" alt="neke zenske" class="slika4"> 
+             <p class="tekst3"><strong>Sam Claflin & Laura Haddock</strong><br>
+             The Hunger Games star and his wife welcomed their second child, a baby girl, in early January. “It’s happy news,” Claflin said during an episode of BBC Radio 2′s The Chris Evans Breakfast Show. “She’s very new and shiny.” The couple are also parents to a son, who was born in January 2016.The private pair never formally announced the news of their second pregnancy, but Haddock debuted her baby bump back in October 2017 while attending a Birks </p>
+             
+              <img src="images/car.jpg" width="620" height="375" alt="neke zenske" class="slika5"> 
+             <p class="tekst4"><strong>Offset and Cardi B</strong><br>
+             Rapper Cardi B, whose real name is Belcalis Almanzar, revealed during a "Saturday Night Live" performance  that she's pregnant. Her fiance Offset, whose real name is Kiari Kendrell Cephus, then took to Insatgram to thank fans for their support saying they "feel so blessed."The Migos rapper, 26, squatted to kiss the “Bodak Yellow” star’s growing bump and paused to put an affectionate hand on her baby belly. </p>
+           </div><!----------------kraj drugi-----------------> 
+           
+           <div class="treci">
+               <div id="wrapper">
+			<div id="carousel-left">
+				<img src="images/neko.jpg" width="500" height="360" />
+				<img src="images/far.jpg" width="500" height="360" />
+				<img src="images/ken.jpg" width="500" height="360"/ >
+				<img src="images/dana.jpg" width="500" height="360" />
+			</div>
+			<div id="carousel-center">
+				<img src="images/far.jpg" width="580" height="450"/ >
+				<img src="images/ken.jpg" width="580" height="450" />
+				<img src="images/dana.jpg" width="580" height="450" />
+				<img src="images/neko.jpg" width="580" height="450" />
+			</div>
+			<div id="carousel-right">
+				<img src="images/ken.jpg" width="500" height="360"/ >
+				<img src="images/dana.jpg" width="500" height="360" />
+				<img src="images/neko.jpg" width="500" height="360" />
+				<img src="images/far.jpg" width="500" height="360" />
+			</div>
+			<a id="prev" href="#">&lsaquo;</a>
+			<a id="next" href="#">&rsaquo;</a>
+		</div>
+           </div><!----------------kraj treci-----------------> 
+            </div><!----------------kraj content-----------------> 
+            
+            <footer>
+<p id="footer">© 2018copy right,About Terms and Privacy</p></footer>
+    <!----------------kraj footer---------------> 
+    </div> <!----------------kraj wrap-----------------> 
+        
+</body>
+</html>
